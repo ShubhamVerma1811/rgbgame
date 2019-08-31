@@ -1,0 +1,67 @@
+button {
+    border: 3px solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: "Google Sans";
+    color: white;
+    font-weight: normal;
+    margin: 9px;
+    margin-bottom: 9px;
+    background-color: grey;
+    /* max-width: 392px; */
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.container {
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+
+@media (max-width: 392px) {
+    button {
+        border: none;
+        height: 90px;
+        width: 90px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-family: "Google Sans";
+        color: white;
+        font-weight: normal;
+        margin: 9px;
+        margin-bottom: 9px;
+        background-color: grey;
+
+    }
+}
+
+@media (max-width: 362px) {
+    button {
+        border: none;
+        height: 88px;
+        width: 88px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-family: "Google Sans";
+        color: white;
+        font-weight: normal;
+        margin: 9px;
+        margin-bottom: 9px;
+        background-color: grey;
+
+    }
+}
+
+body{
+    margin: 0px;
+}
+
+#head{
+    height: 1000px;
+}

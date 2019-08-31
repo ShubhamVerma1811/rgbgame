@@ -32,9 +32,12 @@ function checkIndex(event) {
     if (p === q[pos]) {
         // c[pos].style.backgroundColor = "#66FF00";
         div.style.backgroundColor = p;
+        c[pos].style.boxShadow = "5px 5px 50px black";
     }
     else {
         c[pos].style.backgroundColor = "transparent";
         c[pos].style.border = "none";
     }
 }
+
+window.addEventListener("scroll",()=>window.scrollTo(0,0));

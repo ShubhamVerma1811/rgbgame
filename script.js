@@ -33,6 +33,7 @@ function checkIndex(event) {
         // c[pos].style.backgroundColor = "#66FF00";
         div.style.backgroundColor = p;
         c[pos].style.boxShadow = "5px 5px 50px black";
+        // c[pos].style.outline = "none";
     }
     else {
         c[pos].style.backgroundColor = "transparent";

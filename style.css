@@ -10,6 +10,7 @@ button {
     margin: 9px;
     margin-bottom: 9px;
     background-color: grey;
+    /* outline: none; */
     /* max-width: 392px; */
 }
 

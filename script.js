@@ -37,6 +37,7 @@ function checkIndex(event) {
     else {
         c[pos].style.backgroundColor = "transparent";
         c[pos].style.border = "none";
+        c[pos].style.cursor = "default";
     }
 }
 

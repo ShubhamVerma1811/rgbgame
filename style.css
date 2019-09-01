@@ -15,6 +15,13 @@ button {
 
 h1 {
     text-transform: uppercase;
+    height: 100px;
+    /* margin: auto 0px;  */
+    margin-bottom: 0px;
+    padding-top: 25px;
+    background-color: #232323;
+    color: white;
+    
 }
 
 .container {
@@ -58,10 +65,27 @@ h1 {
     }
 }
 
-body{
-    margin: 0px;
+@media (max-width: 326px) {
+    button {
+        border: none;
+        height: 80px;
+        width: 80px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-family: "Google Sans";
+        color: white;
+        font-weight: normal;
+        margin: 9px;
+        margin-bottom: 9px;
+        background-color: grey;
+
+    }
 }
 
-#head{
+body {
+    margin: 0px
+}
+
+#head {
     height: 1000px;
 }

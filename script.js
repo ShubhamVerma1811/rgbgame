@@ -31,8 +31,15 @@ function checkIndex(event) {
     let pos = (Array.from(c).indexOf(event.target));
     if (p === q[pos]) {
         // c[pos].style.backgroundColor = "#66FF00";
-        div.style.backgroundColor = p;
-        c[pos].style.boxShadow = "5px 5px 50px black";
+        // div.style.backgroundColor = p;
+        // c[pos].style.boxShadow = "5px 5px 50px black";
+        for(i=0;i<9;i++)
+        {
+            c[i].style.backgroundColor = p;
+            c[i].style.border = "3px solid black";
+            c[i].style.pointerEvents = "none";
+        }
+
         // c[pos].style.outline = "none";
     }
     else {

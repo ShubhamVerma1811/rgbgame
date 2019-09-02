@@ -8,6 +8,10 @@ input
     font-family: "century Gothic";
 }
 
+input:focus{
+    outline: none;
+}
+
 button {
     border: 3px solid black;
     height: 100px;

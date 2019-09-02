@@ -10,26 +10,39 @@ button {
     margin: 9px;
     margin-bottom: 9px;
     background-color: grey;
-    /* outline: none; */
-    /* max-width: 392px; */
 }
 
-button:focus
-{
+button:focus {
     outline: none;
 }
+
+body {
+    margin: 0px;
+    background-color: #232323;
+}
+
+#head {
+    height: 1000px;
+    padding-top: 30px;
+}
+
+nav {
+    background-color: white;
+    height: 20px;
+    border-bottom: .5px solid #232323;
+}
+
 
 h1 {
     text-transform: uppercase;
     height: 100px;
-    /* margin: auto 0px;  */
     margin-bottom: 0px;
     padding-top: 25px;
     background-color: #232323;
     font-family: "Century Gothic";
     font-weight: normal;
     color: white;
-    
+
 }
 
 .container {
@@ -89,21 +102,3 @@ h1 {
 
     }
 }
-
-body {
-    margin: 0px;
-    background-color: #232323;
-}
-
-#head {
-    height: 1000px;
-    /* margin-top: 30px; */
-    padding-top: 30px;
-}
-
-nav{
-    background-color: white;
-    height: 20px;
-    border-bottom: .5px solid #232323;
-}
-

@@ -5,14 +5,17 @@ let div = document.querySelector("div");
 let newBtn = document.querySelector("#newBtn");
 let q = [];
 
-for (i = 0; i < 9; i++) {
-    var c = document.querySelectorAll("button")
-    var x = Math.floor((Math.random() * 257));
-    var y = Math.floor((Math.random() * 257));
-    var z = Math.floor((Math.random() * 257));
+    for (i = 0; i < 9; i++) {
+        var c = document.querySelectorAll("button")
+        var x = Math.floor((Math.random() * 257));
+        var y = Math.floor((Math.random() * 257));
+        var z = Math.floor((Math.random() * 257));
 
-    q[i] = c[i].style.backgroundColor = "rgb(" + x + "," + y + "," + z + ")";
-}
+        q[i] = c[i].style.backgroundColor = "rgb(" + x + "," + y + "," + z + ")";
+    }
+
+
+
 let b = Math.floor(Math.random() * 9);
 var p = h1.innerHTML = q[b];
 
@@ -35,6 +38,8 @@ function checkIndex(event) {
             c[i].style.pointerEvents = "none";
             c[i].style.transition = "background 0.5s";
         }
+        h1.style.transition = "background 0.5s";
+        h1.style.backgroundColor = p;
     } else {
         c[pos].style.backgroundColor = "transparent";
         c[pos].style.border = "none";

@@ -3,16 +3,17 @@ var h1 = document.querySelector("h1");
 var body = document.querySelector("body");
 let div = document.querySelector("div");
 let newBtn = document.querySelector("#newBtn");
+var cor = document.querySelector("h3");
 let q = [];
 
-    for (i = 0; i < 9; i++) {
-        var c = document.querySelectorAll("button")
-        var x = Math.floor((Math.random() * 257));
-        var y = Math.floor((Math.random() * 257));
-        var z = Math.floor((Math.random() * 257));
+for (i = 0; i < 9; i++) {
+    var c = document.querySelectorAll("button")
+    var x = Math.floor((Math.random() * 257));
+    var y = Math.floor((Math.random() * 257));
+    var z = Math.floor((Math.random() * 257));
 
-        q[i] = c[i].style.backgroundColor = "rgb(" + x + "," + y + "," + z + ")";
-    }
+    q[i] = c[i].style.backgroundColor = "rgb(" + x + "," + y + "," + z + ")";
+}
 
 
 
@@ -40,6 +41,10 @@ function checkIndex(event) {
         }
         h1.style.transition = "background 0.5s";
         h1.style.backgroundColor = p;
+        cor.style.transition = "background 0.5";
+        cor.style.display = "block";
+        newBtn.value = "Play Again?";
+
     } else {
         c[pos].style.backgroundColor = "transparent";
         c[pos].style.border = "none";
